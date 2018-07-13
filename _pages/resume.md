@@ -3,4 +3,4 @@ title: "Resume"
 permalink: /resume/
 ---
 
-<h1> Delaney Scheiern </h1>
+<center><h2> Delaney Scheiern </h2></center>
