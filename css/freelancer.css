@@ -18,7 +18,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #abcdef;<--67ede1 no change noticed-->
+  color: #18BC9C;
   outline: none;
 }
 h1,
@@ -54,11 +54,11 @@ hr.star-light {
   border-color: white;
 }
 hr.star-light:after {
-  background-color: #abcdef <--67ede1 no change noticed-->;
+  background-color: #18BC9C;
   color: white;
 }
 hr.star-primary {
-  border-color: #abcdef <--2C3E50-->;
+  border-color: #2C3E50;
 }
 hr.star-primary:after {
   background-color: white;
@@ -69,7 +69,7 @@ hr.star-primary:after {
 }
 header {
   text-align: center;
-  background: #67ede1;
+  background: #18BC9C;
   color: white;
 }
 header .container {
@@ -104,7 +104,7 @@ header .intro-text .skills {
   }
 }
 .navbar-custom {
-  background: #265a8f;
+  background: #2C3E50;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -129,7 +129,7 @@ header .intro-text .skills {
   color: white;
 }
 .navbar-custom .navbar-nav li a:hover {
-  color: #67ede1;
+  color: #18BC9C;
   outline: none;
 }
 .navbar-custom .navbar-nav li a:focus,
@@ -138,13 +138,13 @@ header .intro-text .skills {
 }
 .navbar-custom .navbar-nav li.active a {
   color: white;
-  background: #67ede1;
+  background: #18BC9C;
 }
 .navbar-custom .navbar-nav li.active a:hover,
 .navbar-custom .navbar-nav li.active a:focus,
 .navbar-custom .navbar-nav li.active a:active {
   color: white;
-  background: #67ede1;
+  background: #18BC9C;
 }
 .navbar-custom .navbar-toggle {
   color: white;
@@ -154,9 +154,9 @@ header .intro-text .skills {
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #67ede1;
+  background-color: #18BC9C;
   color: white;
-  border-color: #67ede1;
+  border-color: #18BC9C;
 }
 @media (min-width: 768px) {
   .navbar-custom {
@@ -186,7 +186,7 @@ section h2 {
   font-size: 3em;
 }
 section.success {
-  background: #FFFFFF;
+  background: #18BC9C;
   color: white;
 }
 @media (max-width: 767px) {
@@ -289,7 +289,7 @@ section.success {
   opacity: 1;
 }
 .floating-label-form-group-with-focus label {
-  color: #67ede1;
+  color: #18BC9C;
 }
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
@@ -323,7 +323,7 @@ footer .footer-below {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-  color: #67ede1;
+  color: #18BC9C;
   background: white;
   border: solid 2px white;
 }
@@ -371,8 +371,8 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-success {
   color: white;
-  background-color: #FFFFFF;
-  border-color: #67ede1;
+  background-color: #18BC9C;
+  border-color: #18BC9C;
   font-weight: 700;
 }
 .btn-success:hover,
@@ -404,11 +404,11 @@ fieldset[disabled] .btn-success:active,
 .btn-success.disabled.active,
 .btn-success[disabled].active,
 fieldset[disabled] .btn-success.active {
-  background-color: #FFFFFF;
-  border-color: #67ede1;
+  background-color: #18BC9C;
+  border-color: #18BC9C;
 }
 .btn-success .badge {
-  color: #67ede1;
+  color: #18BC9C;
   background-color: white;
 }
 .btn-social {
