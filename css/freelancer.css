@@ -18,7 +18,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #67ede1;
+  color: #abcdef;<--#67ede1-->
   outline: none;
 }
 h1,
