@@ -1122,12 +1122,15 @@ img {
   font-size: 30px;
 }
 .vl {
-    border-left: 6px solid #2C3E50;
-    height: 100px;
-    position: absolute;
-    left: 30%;
-    margin-left: -3px;
-    top: 0;
+  border-left: 6px solid #2C3E50;
+  height: 100px;
+  position: absolute;
+  left: 30%;
+  margin-left: -3px;
+  top: 0;
+}
+.res-act {
+  
 }
 .img-responsive,
 .thumbnail > img,
