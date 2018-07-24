@@ -1116,10 +1116,10 @@ img {
   vertical-align: middle;
 }
 .res-sec {
-  background-color: blue;
+  background-color: #2C3E50;
   color: white;
   padding: 10px;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .img-responsive,
@@ -1314,7 +1314,7 @@ small,
 mark,
 .mark {
   padding: .2em;
-  background-color: #ff0000 <--fcf8e3;
+  background-color: #fcf8e3;
 }
 .text-left {
   text-align: left;
@@ -1344,7 +1344,7 @@ mark,
   color: #777;
 }
 .text-primary {
-  color: #ff0000 <--337ab7;
+  color: #337ab7;
 }
 a.text-primary:hover,
 a.text-primary:focus {
