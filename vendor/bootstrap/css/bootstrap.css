@@ -1122,11 +1122,11 @@ img {
   font-size: 30px;
 }
 .vl {
-  border-left: 10px solid #2C3E50;
+  border-left: 30px solid #2C3E50;
   height: 100px;
   position: absolute;
-  left: 35%;
-  margin-left: -3px;
+  left: 40%;
+  margin-left: 0px;
   top: 0;
 }
 .res-act {
