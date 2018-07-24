@@ -1119,9 +1119,16 @@ img {
   background-color: #2C3E50;
   color: white;
   padding: 10px;
-  font-size: 20px;
+  font-size: 30px;
 }
-
+.vl {
+    border-left: 6px solid #2C3E50;
+    height: 100px;
+    position: absolute;
+    left: 30%;
+    margin-left: -3px;
+    top: 0;
+}
 .img-responsive,
 .thumbnail > img,
 .thumbnail a > img,
