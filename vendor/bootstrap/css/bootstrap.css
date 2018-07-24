@@ -1115,6 +1115,12 @@ figure {
 img {
   vertical-align: middle;
 }
+.res-sec {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+}
+
 .img-responsive,
 .thumbnail > img,
 .thumbnail a > img,
