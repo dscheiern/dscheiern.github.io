@@ -1116,10 +1116,10 @@ img {
   vertical-align: middle;
 }
 .res-sec {
-  background-color: tomato;
+  background-color: blue;
   color: white;
-  padding: 20px;
-  font-size: large;
+  padding: 10px;
+  font-size: 15px;
 }
 
 .img-responsive,
