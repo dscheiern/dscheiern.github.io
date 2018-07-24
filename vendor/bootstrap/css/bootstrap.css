@@ -1118,7 +1118,8 @@ img {
 .res-sec {
   background-color: tomato;
   color: white;
-  padding: 10px;
+  padding: 20px;
+  font-size: large;
 }
 
 .img-responsive,
