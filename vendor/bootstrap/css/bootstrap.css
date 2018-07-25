@@ -1116,13 +1116,13 @@ img {
   vertical-align: middle;
 }
 .res-sec {
-  background-color: #2C3E50;
+  background-color: #132C61;
   color: white;
   padding: 10px;
   font-size: 30px;
 }
 .vl {
-  border-left: 30px solid #2C3E50;
+  border-left: 30px solid #132C61;
   height: 100px;
   position: absolute;
   left: 40%;
