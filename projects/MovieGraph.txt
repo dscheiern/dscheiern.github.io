@@ -1,0 +1,91 @@
+/*
+ *
+ MovieGraph.java
+ COSC 102, Colgate University
+
+ Your code goes here.
+ See instructions for explanation of methods.
+
+ */
+
+import java.io.*;
+import java.util.*;
+
+
+
+public class MovieGraph
+{
+
+    private HashMap<String,HashSet<String>> data;
+
+
+  //Constructor
+  //Gets passed all of the provided read in data
+  //in the form of an ArrayList of String arrays.
+  //Each string array represents one line of the source data
+  //split on the forward slashes '/'.
+  public MovieGraph(ArrayList<String[]> data)
+  {
+    this.data = new HashMap<String, HashSet<String>>();
+    for (String[] row : data){
+      String movie = row[0];
+      this.data.put(movie, new HashSet<String>());
+      for (int i = 1; i < row.length; i++){
+        String actor = row[i];
+        this.data.get(movie).add(actor);
+        if (!this.data.containsKey(actor)){
+          this.data.put(actor, new HashSet<String>());
+        }
+        this.data.get(actor).add(movie);
+      }
+    }
+    /*
+    //debug code, prints contents of passed in ArrayList
+    //remove once you have completed your implementation!
+    for (String[] row : data)
+      System.out.println(Arrays.toString(row));
+      */
+      //System.out.println(this.data.toString());
+  }
+
+
+
+  //Returns an ArrayList of Strings which is the shortest path of movies/actors between
+  //target1 and target2.
+  //If no path can be found, can return either null or an empty ArrayList
+  public ArrayList<String> findShortestLink(String target1, String target2){
+    ArrayList<String> ans = new ArrayList<String>();
+    String current = target1;
+    HashMap<String, String> alrQ = new HashMap<String, String>();
+    LinkedList<String> toVisit = new LinkedList<String>();
+    boolean found = false;
+    alrQ.put(target1, null);
+    while (found == false || data.keySet().equals(alrQ.keySet())){
+      for (String s : data.get(current)){
+        if (!alrQ.containsKey(s)){
+          alrQ.put(s, current);
+          toVisit.add(s);
+          if (s.equals(target2)){
+            found = true;
+          }
+        }
+      }
+      current = toVisit.poll();
+    }
+
+      //System.out.println(alrQ.keySet().toString() + alrQ.values().toString());
+
+    if (found == false){
+      return ans;
+    }
+    current = target2;
+    while (!current.equals(target1)){
+      ans.add(0,current);
+      current = alrQ.get(current);
+    }
+    ans.add(0,target1);
+    return ans;
+  }
+
+
+  }
