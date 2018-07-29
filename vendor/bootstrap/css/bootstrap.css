@@ -1964,11 +1964,7 @@ pre code {
   }
   .col-md-9 {
     width: 75%;
-    display: block;
-    font-size: .70em;
-    margin-top: 2.33em;
-    margin-bottom: 2.33em;
-    font-weight: bold;
+    font-size: 12px;
   }
   .col-md-8 {
     width: 66.66666667%;
