@@ -1305,7 +1305,8 @@ h6,
 }
 p {
   margin: 0 0 10px;
-  font-size: 12px;
+  font-size: 10px;
+  margin-top: 10px;
 }
 .lead {
   margin-bottom: 20px;
