@@ -1137,7 +1137,7 @@ img {
 .thumbnail a > img,
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
-  display: block;
+  display: inline-block;
   max-width: 100%;
   height: auto;
 }
@@ -1305,14 +1305,37 @@ h6,
 }
 p {
   margin: 0 0 10px;
-  font-size: 10px;
+  font-size: 12px;
   margin-top: 10px;
+  text-align: center;
 }
 .lead {
   margin-bottom: 20px;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.4;
+}
+.left {
+  float: left;
+  padding: 0 20px 0 0;
+}
+.content {
+  display: inline-block;
+  vertical-align: top;
+}
+.box {
+  display: inline-block;
+  vertical-align: top;
+  margin: 5px;
+}
+.title {
+  margin: 0;
+  padding: 3px 10px 3px 10px;
+}
+.title {
+  font-size: 40px;
+  font-weight: bold;
+  align: center;
 }
 @media (min-width: 768px) {
   .lead {
@@ -1601,7 +1624,7 @@ pre code {
   overflow-y: scroll;
 }
 .container {
-  padding-right: 15px;
+  padding-right: 0px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
@@ -2263,6 +2286,9 @@ pre code {
   }
   .col-lg-offset-1 {
     margin-left: 8.33333333%;
+  }
+  .col-lg-offset-baby {
+    margin-left: 5%
   }
   .col-lg-offset-0 {
     margin-left: 0;

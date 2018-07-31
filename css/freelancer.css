@@ -45,7 +45,7 @@ hr.star-primary:after {
   content: "\f005";
   font-family: FontAwesome;
   display: inline-block;
-  position: relative;
+  position: center;
   top: -0.8em;
   font-size: 2em;
   padding: 0 0.25em;
@@ -188,6 +188,7 @@ section h2 {
 section.success {
   background: #0087EF;
   color: white;
+  margin-top: 75px;
 }
 @media (max-width: 767px) {
   section {
