@@ -64,6 +64,16 @@ hr.star-primary:after {
   background-color: white;
   color: #132C61;
 }
+hr.star-dark {
+  display: block;
+  color: #0087EF
+  padding: 0;
+  border: none;
+  border-top: solid 5px;
+  text-align: center;
+  max-width: 250px;
+  margin: 25px auto 30px;
+}
 .img-centered {
   margin: 0 auto;
 }

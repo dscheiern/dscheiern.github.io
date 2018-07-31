@@ -1118,8 +1118,8 @@ img {
 .res-sec {
   background-color: #132C61;
   color: white;
-  padding: 10px;
-  font-size: 30px;
+  padding: 5px;
+  font-size: 40px;
 }
 .vl {
   border-left: 30px solid #132C61;
@@ -1305,7 +1305,7 @@ h6,
 }
 p {
   margin: 0 0 10px;
-  font-size: 12px;
+  font-size: 10px;
   margin-top: 10px;
   text-align: center;
 }
@@ -1328,13 +1328,26 @@ p {
   vertical-align: top;
   margin: 5px;
 }
-.title {
+.title, .sub-title, .sub-sub-title {
   margin: 0;
   padding: 3px 10px 3px 10px;
 }
 .title {
   font-size: 40px;
   font-weight: bold;
+  align: center;
+}
+.sub-title {
+  font-size: 25px;
+  font-weight: bold;
+  align: center;
+}
+.sub-sub-title {
+  font-size: 20px;
+  align: center;
+}
+.sub3-title {
+  font-size: 15px;
   align: center;
 }
 @media (min-width: 768px) {
