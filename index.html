@@ -2,651 +2,314 @@
 <html lang="en">
 
 <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="" content="">
-    <meta name="" content="">
-
-    <title>Delaney Scheiern's Portfolio</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
-
-    <!-- Theme CSS -->
-    <link href="css/freelancer.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+  <link href="css/freelancer.css" rel="stylesheet">
+  <title>Delaney Scheiern's Portfolio</title>
 </head>
 
-<body id="page-top" class="index">
+<body>
+  <div id="navbar">
+    <a href="#" id = "navName">Delaney Scheiern</a>
+    <a href="#about">About</a>
+    <a href="#resume">Resume</a>
+    <a href="#projects">Projects</a>
+  </div>
 
-    <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="#page-top">Delaney Scheiern</a>
-            </div>
+  <section id = "about">
+    <p class = "sectionTitle">About Me</p>
+    <div class = "hl1"></div>
+    <div id="aboutOptions">
+      <a href="#" id="past" onclick = "pastFunc(); return false;">Past</a>
+      <div class="vl"></div>
+      <a href="#" id="present" onclick = "presentFunc(); return false;">Present</a>
+      <div class="vl"></div>
+      <a href="#" id="future" onclick = "futureFunc(); return false;">Future</a>
+    </div>
+    <div class = "picNText">
+      <img src="img/profile2.png" width="200" height="320" align="center" class = "picItem"/>
+      <p id = "aboutInfo" class = "textItem">I am currently interning at Sandia National Labs in the Electrical Science and Experiments Department. I am a Junior at Colgate University double majoring in Computer Science and Applied Math. For the Fall 2019 semester, I am enrolled in Operating Systems, Analysis of Algorithms, Numerical Analysis, and Real Analysis. I am a Fellow with Rewriting the Code (RTC), which is an organization that encourages women throughout their tech careers. At Colgate, I am captain of the cheerleading team, and I am a member of Colgate Coders, the aerial arts club, and Delta Delta Delta.</p>
+    </div>
+  </section>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#portfolio">Projects</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#resume">Resume</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+  <section id = "resume">
+    <p class = "sectionTitle">Resume</p>
+<!--Education resume section-->
+    <div class = "hl1"></div>
+    <div id="resumeOptions">
+      <a href="#" id="educ" class = "resOpt" onclick = "edFunc(); return false;">Education</a>
+      <div class="vl"></div>
+      <a href="#" id="workExp" class = "resOpt" onclick = "expFunc(); return false;">Experience</a>
+      <div class="vl"></div>
+      <a href="#" id="techSkills" class = "resOpt" onclick = "techFunc(); return false;">Technical Skills</a>
+      <div class="vl"></div>
+      <a href="#" id="activities" class = "resOpt" onclick = "actFunc(); return false;">Leadership and Activities</a>
+    </div>
+    <hr>
+
+    <div id = "resSpot">
+      <div class = "picNText resume educ">
+        <img src="img/resume/colgateLogo.png" alt="" align="middle" width="200" class = "picItem"/>
+        <div class = "textItem">
+          <div class = "resTitle">Colgate University</div>
+          <div class = "resSub1">Hamilton, NY</div>
+          <div class = "resSub2"><i>Bachelor of Arts in Computer Science and Applied Mathematics</i>, expected May 2021</div>
+          <div class = "resSub3">CS GPA: 3.91 &nbsp; &nbsp; &nbsp; Applied Math GPA: 3.41 &nbsp; &nbsp; &nbsp; Overall GPA: 3.47</div>
+          <div class = "resMainText">
+            I have completed courses continuing mathematical and computational knowledge in multivariable calculus, number theory, linear algebra, abstract data structures, and run-time optimization.
+            I made the Dean's List for the Spring 2018 semester. I am involved in a number of extracuricular activities on campus, including the cheerleading team, listed in more detail below.
+          </div>
         </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-    <!-- Header
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <img class="img-responsive" src="img/profile.png" alt="">
-                    <div class="intro-text">
-                        <span class="name">Delaney Scheiern</span>
-                        <hr class="star-light">
-                    </div>
-                </div>
-            </div>
+      </div>
+      <hr class = "resume educ">
+      <div class = "picNText resume educ">
+        <img src="img/resume/troyLogo.png" alt="" align="middle" width="200" class = "picItem"/>
+        <div class = "textItem">
+          <div class = "resTitle">Troy High School</div>
+          <div class = "resSub1">Fullerton, CA</div>
+          <div class = "resSub2">Graduated May 2017, GPA: 4.7</div>
+          <div class = "resMainText">
+            I earned both Full International Baccalaureate (IB) and Troy Tech Program Diplomas. As part of the Troy Tech program, I enrolled in computer science classes all four years, which included hands-on circuit wiring and a strong foundation in Object-Oriented Programming.
+            Through the IB Program I learned how to implement the software development life cycle. I also completed 10+ page research papers in physics, math, french, philosophy, and english, and composed a research paper on quantum computing and data securtity in pursuit of my IB Diploma.
+          </div>
         </div>
-    </header>
-  -->
-
-
-    <!-- About Section -->
-    <section class="success" id="about">
-        <div class="container">
-            <img class="img-reponsive col-lg-3 col-lg-offset-baby" src="img/profile2.png" alt="" align="middle" width="375"/>
-            <div class="content col-lg-8">
-                <p class="title">About Me</p>
-                <hr class="star-light">
-                <p class="col-lg-6 text-left">I'm a student at Colgate University majoring in Computer Science and Applied Math. I am searching for an internship for Summer 2019 in software engineering, data science, or machine learning and a remote part-time job related to technology.</p>
-                <p class="col-lg-6 text-left">In my spare time I like teaching myself about computer science and trying to do some projects. <!--Download a PDF of my resume here or--> Keep exploring my website to see what I've been up to!</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Projects</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/CourseRec.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/Movie-Madness.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/CreditCardFraud.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <!--
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/game.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/safe.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/submarine.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-              -->
-            </div>
-        </div>
-    </section>
-
-
-
-      <!-- Resume Section -->
-      <section class="success" id="resume">
-          <div class="container">
-              <div class="row">
-                  <div class="col-lg-12 text-center">
-                      <h2>Resume</h2>
-                      <hr class="star-light">
-                  </div>
-              </div>
-              <div class="row">
-                  <p class="res-sec">Education</p>
-              </div>
-              <div class="row">
-                  <img class="img-reponsive col-lg-3 col-lg-offset-baby" src="img/resume/colgateLogo.png" alt="" align="middle" width="375"/>
-                  <div class="content col-lg-8">
-                      <p class="sub-title">Colgate University</p>
-                      <p class="sub-sub-title">Hamilton, NY<br>Expected Graduation: May 2021<br><i>Bachelor of Arts in Computer Science and Applied Mathematics</i></p>
-                      <p class="sub3-title">CS GPA: 4.00 &nbsp; &nbsp; &nbsp; Overall GPA: 3.21</p>
-                      <p class="col-lg-6">I have completed courses continuing mathematical and computational knowledge in multivariable calculus, number theory, linear algebra, abstract data structures, and run-time optimization.</p>
-                      <p class="col-lg-6">I made the Dean's List for the Spring 2018 semester. I am involved in a number of extracuricular activities on campus, including the cheerleading team, listed in more detail below.</p>
-                  </div>
-              </div>
-              <hr>
-              <div class="row">
-                  <div class="content col-lg-8">
-                      <p class="sub-title">Troy High School</p>
-                      <p class="sub-sub-title">Fullerton, CA<br>May 2017</p>
-                      <p class="sub3-title">GPA: 4.7</p>
-                      <p class="col-lg-6">I earned both Full International Baccalaureate (IB) and Troy Tech Program Diplomas. As part of the Troy Tech program, I enrolled in computer science classes all four years, which included hands-on circuit wiring and a strong foundation in Object-Oriented Programming.</p>
-                      <p class="col-lg-6">Through the IB Program I learned how to implement the software development life cycle. I also completed 10+ page research papers in physics, math, french, philosophy, and english, and composed a research paper on quantum computing and data securtity in pursuit of my IB Diploma.</p>
-                  </div>
-                  <img class="img-reponsive col-lg-3" src="img/resume/troyLogo.png" alt="" align="middle" width="375"/>
-              </div>
+      </div>
+    </div>
+    <hr class = "resume educ">
 
 <!--Work experience resume section-->
-              <div class="row">
-                  <p class="res-sec">Work Experience</p>
-              </div>
-              <!--
-              <div class="row">
-                  <img class="img-reponsive col-lg-3 col-lg-offset-baby" src="img/resume/compLab.png" alt="" align="middle" width="375"/>
-                  <div class="content col-lg-8">
-                      <p class="sub-title">Computer Science Teaching Assistant</p>
-                      <p class="sub-sub-title">Colgate University<br>August 2018-Present</p>
-                      <p class="col-lg-6">write here</p>
-                      <p class="col-lg-6">write here</p>
-                  </div>
-              </div>
-              <hr>
-            -->
-              <div class="row">
-                <img class="img-reponsive col-lg-3 col-lg-offset-baby" src="img/resume/hbicLogo.png" alt="" align="middle" width="375"/>
-                  <div class="content col-lg-8">
-                      <p class="sub-title">Help for Brain Injured Children, Inc.</p>
-                      <p class="sub-sub-title">La Habra, CA<br>May 2016-July 2016<br>Technical Intern</p>
-                      <p class="col-lg-6">HBIC is a school for children and adults with moderate to severe mental disabilities. This internship had very little structure, therefore I could make it my own. I taught myself how to use Computer Aided Design (CAD) software and built a 3D model of the campus, which I used to create a virtual tour.</p>
-                      <p class="col-lg-6">In addition to attracting new families, I celebrated graduating students by creating slideshow presentations. I also spent hands-on time with students, and learned how to communicate with and care for them. I attended Rotary Club meetings and other community network meetings with my mentor.</p>
-                  </div>
-
-              </div>
-              <hr>
-              <div class="row">
-
-                  <div class="content col-lg-8">
-                      <p class="sub-title">Discovery Science Center Volunteer</p>
-                      <p class="sub-sub-title">Santa Ana, CA<br>February 2015-August 2016</p>
-                      <p class="col-lg-6">I contributed over 120 hours volunteering at the Discovery Cube, with the purpose of exposing young children to science. My responsibilities included answering guest questions, directing guests</p>
-                      <p class="col-lg-6">around the center, and sharing basic science facts. I also gained an understanding of non-profits and how they work, qualities of a good volunteer, and qualities of good customer service.</p>
-                  </div>
-                  <img class="img-reponsive col-lg-3" src="img/resume/dcoc.png" alt="" align="middle" width="375"/>
-              </div>
+      <div class = "picNText resume exp">
+        <img src="img/resume/hbicLogo.png" alt="" align="middle" width="200" class = "picItem"/>
+        <div class="textItem">
+          <div class = "resTitle">Help for Brain Injured Children, Inc.</div>
+          <div class = "resSub1">La Habra, CA &nbsp; &nbsp; &nbsp; May 2016-July 2016</div>
+          <div class = "resSub2">Technical Intern</div>
+          <div class = "resMainText">
+            HBIC is a school for children and adults with moderate to severe mental disabilities. This internship had very little structure, therefore I could make it my own. I taught myself how to use Computer Aided Design (CAD) software and built a 3D model of the campus, which I used to create a virtual tour. In addition to attracting new families, I celebrated graduating students by creating slideshow presentations. I also spent hands-on time with students, and learned how to communicate with and care for them. I attended Rotary Club meetings and other community network meetings with my mentor.
+          </div>
+        </div>
+      </div>
+      <hr class = "resume exp">
+      <div class = "picNText resume exp">
+        <img src="img/resume/colgateCoders.png" alt="" align="middle" width="200" class = "picItem"/>
+        <div class="textItem">
+          <div class = "resTitle">&lt;Colgate Coders&gt; Club</div>
+          <div class = "resSub1">Colgate University &nbsp; &nbsp; &nbsp; August 2017-Present</div>
+          <div class = "resMainText">
+            As a member of this club, I attend events such as Git workshops, coding challenges, Command Line workshops, and Hackathons. I hope to become more involved in the computer science community through this club in the coming years.
+          </div>
+        </div>
+      </div>
+      <hr class = "resume exp">
+      <div class = "picNText resume exp">
+        <img src="img/resume/dcoc.png" alt="" align="middle" width="200" class = "picItem"/>
+        <div class="textItem">
+          <div class = "resTitle">Discovery Science Center Volunteer</div>
+          <div class = "resSub1">Santa Ana, CA &nbsp; &nbsp; &nbsp; February 2015-August 2016</div>
+          <div class = "resMainText">
+            I contributed over 120 hours volunteering at the Discovery Cube, with the purpose of exposing young children to science. My responsibilities included answering guest questions, directing guests around the center, and sharing basic science facts. I also gained an understanding of non-profits and how they work, qualities of a good volunteer, and qualities of good customer service.
+          </div>
+        </div>
+      </div>
+      <hr class = "resume exp">
 
 <!--Activities resume section-->
-              <div class="row">
-                  <p class="res-sec">Activities</p>
-              </div>
-              <div class="row">
-                  <img class="img-reponsive col-lg-3 col-lg-offset-baby" src="img/resume/colgateCoders.png" alt="" align="middle" width="375"/>
-                  <div class="content col-lg-8">
-                      <p class="sub-title">&lt;Colgate Coders&gt; Club</p>
-                      <p class="sub-sub-title">Colgate University<br>August 2017-Present</p>
-                      <p class="col-lg-6">As a member of this club, I attend events such as Git workshops, coding challenges, Command Line workshops, and Hackathons.</p>
-                      <p class="col-lg-6">I hope to become more involved in the computer science community through this club in the coming years.</p>
-                  </div>
-              </div>
-              <hr>
-              <div class="row">
-                  <div class="content col-lg-8">
-                      <p class="sub-title">ProjectCSGIRLS</p>
-                      <p class="sub-sub-title">Competition Mentor<br>February 2018-June 2018</p>
-                      <p class="col-lg-6">For this competition, I mentored a middle school girl. Over a couple of months we connected via phone calls and email.</p>
-                      <p class="col-lg-6">I answered her questions about planning a project and building an app from scratch, including brainstorming and prototypes.</p>
-                  </div>
-                  <img class="img-reponsive col-lg-3" src="img/resume/projectcsgirls.png" alt="" align="middle" width="375"/>
-              </div>
-              <hr>
-              <div class="row">
-                  <img class="img-reponsive col-lg-3 col-lg-offset-baby" src="img/resume/colgateCheer.png" alt="" align="middle" width="375"/>
-                  <div class="content col-lg-8">
-                      <p class="sub-title">Colgate Cheerleading Team</p>
-                      <p class="sub-sub-title">Colgate University<br>August 2017-Present</p>
-                      <p class="col-lg-6">As a member of the cheer team, I attend all home football, men's basketball, and women's basketball games. We perform during timeouts and halftimes, as well as cheering on our teams from the sidelines.</p>
-                      <p class="col-lg-6">I also partake in community outreach, such as face painting at children's events and signing (in American Sign Language) the National Anthem at all football games and other Autism Awareness events.</p>
-                  </div>
-              </div>
-              <hr>
-              <div class="row">
-                  <div class="content col-lg-8">
-                      <p class="sub-title">Rewriting the Code</p>
-                      <p class="sub-sub-title">Member<br>June 2018-Present</p>
-                      <p class="col-lg-6">Rewriting the Code (RTC) is an amazing organization that aims to encourage women in STEM. As a member of this group, I continuously learn about</p>
-                      <p class="col-lg-6">opportunities in the technology field. As much as I benefit from this group, I am also able to contribute by answering questions and encouraging others.</p>
-                  </div>
-                  <img class="img-reponsive col-lg-3" src="img/resume/rtcLogo.png" alt="" align="middle" width="375"/>
-              </div>
-              <hr>
-              <div class="row">
-                  <img class="img-reponsive col-lg-3 col-lg-offset-baby" src="img/resume/IAENG.png" alt="" align="middle" width="375"/>
-                  <div class="content col-lg-8">
-                      <p class="sub-title">International Association of Engineers (IAENG)</p>
-                      <p class="sub-sub-title">January 2018-Present</p>
-                      <p class="col-lg-6">As a member of the Societies of Artificial Intelligence, Computer Science, and Software Engineering,</p>
-                      <p class="col-lg-6">I am able to stay informed on current technologies and discoveries in these areas.</p>
-                  </div>
-              </div>
-              <hr>
-              <div class="row">
-                  <div class="content col-lg-8">
-                      <p class="sub-title">Troy Cheerleading Team</p>
-                      <p class="sub-sub-title">Troy High School<br>Captain: April 2016-May 2017<br>Member: April 2014-May 2017</p>
-                      <p class="col-lg-6">As captain my duties included communicating with coaches and board members, such as voicing concerns of my teammates and weekly phone calls with the Booster Club President about upcoming events and team status. I was also responsible for choreographing routines performed in front of 2,500+ students and faculty members.</p>
-                      <p class="col-lg-6">I developed leadership by leading activities such as fundraising events and poster painting, scheduling practices and games, handling teammates' interpersonal relationship issues, and informing all team members, coaches, and board members of such activities and their times.</p>
-                  </div>
-                  <img class="img-reponsive col-lg-3" src="img/resume/troyCheer.png" alt="" align="middle" width="375"/>
-              </div>
+      <div class = "picNText resume act">
+        <img src="img/resume/projectcsgirls.png" alt="" align="middle" width="200" class = "picItem"/>
+        <div class="textItem">
+          <div class = "resTitle">ProjectCSGIRLS</div>
+          <div class = "resSub1">Competition Mentor &nbsp; &nbsp; &nbsp; February 2018-June 2018</div>
+          <div class = "resMainText">
+            For this competition, I mentored a middle school girl. Over a couple of months we connected via phone calls and email.
+            I answered her questions about planning a project and building an app from scratch, including brainstorming and prototypes.
+          </div>
+        </div>
+      </div>
+      <hr class = "resume act">
+      <div class = "picNText resume act">
+        <img src="img/resume/colgateCheer.png" alt="" align="middle" width="200" class = "picItem"/>
+        <div class="textItem">
+          <div class = "resTitle">Colgate Cheerleading Team</div>
+          <div class = "resSub1">Colgate University &nbsp; &nbsp; &nbsp; August 2017-Present</div>
+          <div class = "resMainText">
+            As a member of the cheer team, I attend all home football, men's basketball, and women's basketball games. We perform during timeouts and halftimes, as well as cheering on our teams from the sidelines.
+            I also partake in community outreach, such as face painting at children's events and signing (in American Sign Language) the National Anthem at all football games and other Autism Awareness events.
+          </div>
+        </div>
+      </div>
+      <hr class = "resume act">
+      <div class = "picNText resume act">
+        <img src="img/resume/rtcLogo.png" alt="" align="middle" width="200" class = "picItem"/>
+        <div class="textItem">
+          <div class = "resTitle">Rewriting the Code</div>
+          <div class = "resSub1">Fellow: August 2019-Present</div>
+          <div class = "resSub1">Member: June 2018-Present</div>
+          <div class = "resMainText">
+            Rewriting the Code (RTC) is an amazing organization that aims to encourage women in STEM. As a member of this group, I continuously learn about
+            opportunities in the technology field. As much as I benefit from this group, I am also able to contribute by answering questions and encouraging others.
+          </div>
+        </div>
+      </div>
+      <hr class = "resume act">
+      <div class = "picNText resume act">
+        <img src="img/resume/troyCheer.png" alt="" align="middle" width="200" class = "picItem"/>
+        <div class="textItem">
+          <div class = "resTitle">Troy Cheerleading Team</div>
+          <div class = "resSub1">Troy High School</div>
+          <div class = "resSub2">Captain: April 2016-May 2017</div>
+          <div class = "resSub2">Member: April 2014-May 2017</div>
+          <div class = "resMainText">
+            As captain my duties included communicating with coaches and board members, such as voicing concerns of my teammates and weekly phone calls with the Booster Club President about upcoming events and team status. I was also responsible for choreographing routines performed in front of 2,500+ students and faculty members.
+            I developed leadership by leading activities such as fundraising events and poster painting, scheduling practices and games, handling teammates' interpersonal relationship issues, and informing all team members, coaches, and board members of such activities and their times.
+          </div>
+        </div>
+      </div>
+      <hr class = "resume act">
 
-<!--Accolades resume section-->
-              <div class="row">
-                  <p class="res-sec">Accolades</p>
+              <div class = "picNText resume tech">
+                <div class="textItem">
+                  <div class = "resTitle">Advanced</div>
+                  <div class = "resSub1">Python</div>
+                  <div class = "resSub2">Libraries: PyQt5, pandas, NumPy, matplotlib, sklearn</div>
+                  <div class = "resSub1">Java</div>
+                  <div class = "resSub1">MATLAB</div>
+                </div>
               </div>
-              <div class="row">
-                  <img class="img-reponsive col-lg-3 col-lg-offset-baby" src="img/resume/NCWITLogo.png" alt="" align="middle" width="375"/>
-                  <div class="content col-lg-8">
-                      <p class="sub-title">NCWIT Aspirations in Computing Award</p>
-                      <p class="sub-sub-title">2017</p>
-                  </div>
+              <hr class = "resume tech">
+              <div class = "picNText resume tech">
+                <div class="textItem">
+                  <div class = "resTitle">Intermediate</div>
+                  <div class = "resSub1">HTML</div>
+                  <div class = "resSub1">CSS</div>
+                  <div class = "resSub1">Git</div>
+                </div>
               </div>
-              <hr>
-              <div class="row">
-                  <div class="content col-lg-8">
-                      <p class="sub-title">National Merit Scholar Finalist</p>
-                      <p class="sub-sub-title">2017</p>
+              <hr class = "resume tech">
+              <div class = "picNText resume tech">
+                <div class="textItem">
+                  <div class = "resTitle">Novice</div>
+                  <div class = "resSub1">JavaScript</div>
+                  <div class = "resSub1">XML</div>
+                </div>
+              </div>
+              <hr class = "resume tech">
+              <div class = "picNText resume techSkills">
+                <img src="img/resume/IAENG.png" alt="" align="middle" width="200" class = "picItem"/>
+                <div class="textItem">
+                  <div class = "resTitle">International Association of Engineers (IAENG)</div>
+                  <div class = "resSub1">January 2018-Present</div>
+                  <div class = "resMainText">
+                    As a member of the Societies of Artificial Intelligence, Computer Science, and Software Engineering,
+                    I am able to stay informed on current technologies and discoveries in these areas.
                   </div>
-                  <img class="img-reponsive col-lg-3" src="img/resume/nationalMerit.png" alt="" align="middle" width="375"/>
+                </div>
               </div>
 
 <!--Skills resume section-->
-              <div class="row">
-                  <p class="res-sec">Technical Skills</p>
-              </div>
-              <div class="row">
-                  <p class="sub-title">Programming Languages</p>
-              </div>
-              <hr>
-              <div class="row">
-                  <div class="col-lg-4">
-                      <p class="sub-title">Advanced</p>
-                  </div>
-                  <img class="img-reponsive col-lg-2" src="img/resume/javaLogo.png" alt="" align="middle" width="375"/>
-                  <img class="img-reponsive col-lg-2" src="img/resume/pythonLogo.png" alt="" align="middle" width="375"/>
-                  <div class="col-lg-2">
-                      <p class="sub3-title"><b>Python Libraries:</b><br>pandas<br>NumPy<br>matplotlib<br>sklearn</p>
-                  </div>
-              </div>
-              <hr>
-              <div class="row">
-                  <div class="col-lg-4">
-                      <p class="sub-title">Intermediate</p>
-                  </div>
-                  <img class="img-reponsive col-lg-2" src="img/resume/htmlCSS.png" alt="" align="middle" width="375"/>
-              </div>
-              <hr>
-              <div class="row">
-                  <div class="col-lg-4">
-                      <p class="sub-title">Basic</p>
-                  </div>
-                  <img class="img-reponsive col-lg-3" src="img/resume/matlabLogo.png" alt="" align="middle" width="375"/>
-                  <img class="img-reponsive col-lg-3" src="img/resume/javascriptLogo.png" alt="" align="middle" width="375"/>
-              </div>
-          </div>
-      </section>
+  </section>
 
-    <!-- Contact Section -->
-
-    <!-- Footer -->
-    <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-6">
-                        <h3>Location</h3>
-                        <p>Los Angeles, CA Metropolitan Area
-                            <br>(Willing to relocate for summer internship)</p>
-                    </div>
-                    <div class="footer-col col-md-6">
-                        <h3>Contact Me</h3>
-                            <p>Email: <a href="mailto:dscheiern@gmail.com">dscheiern@gmail.com</a><br>
-                                <!--<a href="mailto:dscheiern@gmail.com" class="btn-social btn-outline"><i class="fa fa-fw fa-email"></i></a>-->
-                            LinkedIn: <a href="https://www.linkedin.com/in/dscheiern/" target="_blank">linkedin.com/in/dscheiern/</a></p>
-                                <!--<a href="https://www.linkedin.com/in/dscheiern/" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>-->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
+  <section id = "projects">
+    <p class = "sectionTitle">Projects</p>
+<!--Education resume section-->
+    <div class = "hl1"></div>
+    <div id="projOptions">
+      <a href="#" id="python" class = "projOpt" onclick = "pyFunc(); return false;">Python</a>
+      <div class="vl"></div>
+      <a href="#" id="matlab" class = "projOpt" onclick = "matlabFunc(); return false;">MATLAB</a>
+      <div class="vl"></div>
+      <a href="#" id="htmlcssjs" class = "projOpt" onclick = "htmlFunc(); return false;">HTML/CSS/JavaScript</a>
+      <div class="vl"></div>
+      <a href="#" id="java" class = "projOpt" onclick = "javaFunc(); return false;">Java</a>
+      <div class="vl"></div>
+      <a href="#" id="appliedmath" class = "projOpt" onclick = "mathFunc(); return false;">Applied Math</a>
     </div>
 
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>University Course Recommendation System (In Progress)</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/CourseRec.jpg" class="img-responsive img-centered" alt="">
-                            <p>This program is intended to consider major/minor/university requirements and the student's preferences,
-                              such as professors, time of day, and class style, to recommend the classes in which the student should register.
-                              I am currently programming this specifically for Colgate University, but in the future it could be expanded to other
-                              universities.<br>I am currently at the stage of deciding how to represent my data on both courses and major requirements.
-                              My current plan is to use two Excel files, one for all courses offered and another for each major's requirements.</p>
-                            <ul class="list-inline item-details">
-                              <li>Language:
-                                  <strong>Java and Python
-                                  </strong>
-                              </li>
-                              <li>Date:
-                                  <strong>August 2018
-                                  </strong>
-                              </li>
-                              <li>Topics:
-                                  <strong>Graphs and Databases
-                                  </strong>
-                              </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+    <div class = "picNText proj python java">
+      <img src="img/portfolio/CourseRec.jpg" alt="" align="middle" width="200" class = "picItem"/>
+      <div class="textItem">
+        <div class = "projTitle">University Course Recommendation System (In Progress)</div>
+        <div class = "projSub1">Languages: Java, Python</div>
+        <div class = "projSub2">Topics: Graphs, Databases</div>
+        <div class = "projMainText">
+          This program is intended to consider major/minor/university requirements and the student's preferences,
+          such as professors, time of day, and class style, to recommend the classes in which the student should register.
+          I am currently programming this specifically for Colgate University, but in the future it could be expanded to other
+          universities. I am currently at the stage of deciding how to represent my data on both courses and major requirements.
+          My current plan is to use two Excel files, one for all courses offered and another for each major's requirements.
         </div>
+      </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Movie Madness</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/Movie-Madness.png" class="img-responsive img-centered" alt="">
-                            <p>The intent of this program is to find a path between any two targets -- a movie or actor --
-                                in the fewest steps possible. I constructed a Graph ADT using actor/movie data in a text file,
-                                where the nodes are the movies/actors and the edges are the connections between the nodes.
-                                The user inputs the text file name, then the actor or movie names when prompted. I used a
-                                breadth first search algorithm to find the shortest path between the two targets. The program
-                                then prints the path, if found, between the two targets.<!-- See the complete code
-                                <a href="https://dscheiern.github.io/projects/MovieGraph.txt" target="_blank">here</a> and <a href="https://dscheiern.github.io/projects/MovieMadness.txt" target="_blank">here</a>.--></p>
-                            <ul class="list-inline item-details">
-                                <li>Language:
-                                    <strong>Java
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>April 2018
-                                    </strong>
-                                </li>
-                                <li>Topic:
-                                    <strong>Graphs
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class = "picNText proj java">
+      <img src="img/portfolio/Movie-Madness.png" alt="" align="middle" width="200" class = "picItem"/>
+      <div class="textItem">
+        <div class = "projTitle">Movie Madness</div>
+        <div class = "projSub1">Language: Java</div>
+        <div class = "projSub2">Topic: Graphs</div>
+        <div class = "projMainText">
+          The intent of this program is to find a path between any two targets -- a movie or actor --
+          in the fewest steps possible. I constructed a Graph ADT using actor/movie data in a text file,
+          where the nodes are the movies/actors and the edges are the connections between the nodes.
+          The user inputs the text file name, then the actor or movie names when prompted. I used a
+          breadth first search algorithm to find the shortest path between the two targets. The program
+          then prints the path, if found, between the two targets.
         </div>
+      </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Credit Card Fraud Detection</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/CreditCardFraud.jpg" class="img-responsive img-centered" alt="">
-                            <p>This project was completed with the intent of introducing myself to basic machine learning.
-                              This project uses Credit Card Data provided by <a href="https://www.kaggle.com/mlg-ulb/creditcardfraud" target="_blank">Kaggle</a>.
-                              Using this data, I used two methods -- Isolation Forest and Local Outlier Factor -- to classify each credit card charge as Valid (0) or Fraud (1).
-                              This project was completed by following the <a href="https://www.youtube.com/watch?v=gCWBFyFTxVU" target="_blank">Eduonix tutorial</a>.
-                              <!--See the completed code <a href="https://dscheiern.github.io/projects/fraudDetection.txt" target="_blank">here</a>.--></p>
-                            <ul class="list-inline item-details">
-                                <li>Language:
-                                    <strong>Python
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>July 2018
-                                    </strong>
-                                </li>
-                                <li>Topic:
-                                    <strong>Unsupervised Machine Learning
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class = "picNText proj python">
+      <img src="img/portfolio/CreditCardFraud.jpg" alt="" align="middle" width="200" class = "picItem"/>
+      <div class="textItem">
+        <div class = "projTitle">Credit Card Fraud Detection</div>
+        <div class = "projSub1">Language: Python</div>
+        <div class = "projSub2">Topic: Unsupervised Machine Learning</div>
+        <div class = "projMainText">
+          This project was completed with the intent of introducing myself to basic machine learning.
+          This project uses Credit Card Data provided by <!--<a href="https://www.kaggle.com/mlg-ulb/creditcardfraud" target="_blank">-->Kaggle.
+          Using this data, I used two methods -- Isolation Forest and Local Outlier Factor -- to classify each credit card charge as Valid (0) or Fraud (1).
+          <!--This project was completed by following the <a href="https://www.youtube.com/watch?v=gCWBFyFTxVU" target="_blank">Eduonix tutorial</a>.-->
         </div>
+      </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/game.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Yourname</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class = "picNText proj apmath">
+      <img src="projects/angelsLogo.png" alt="" align="middle" width="150" class = "picItem"/>
+      <div class="textItem">
+        <div class = "projTitle">Mathematical Modeling Final Project</div>
+        <div class = "projSub1">Optimizing MLB Pitching Using Markov Chains</div>
+        <div class = "projSub2">Topic: Markov Chains, Transition Matrices, Optimization</div>
+        <div class = "projSub2">View &nbsp<a href="projects/baseballMarkovChainMatrix.pdf">Transition Matrix</a>&nbsp and &nbsp<a href="projects/finalPortfolio.pdf"> final write-up </a></div>
+        <div class = "projMainText">
+          For the first part of my final project, I tried to solve my favorite MLB team's pitching problems. I used a Markov
+          Chain with two absorbing states, and tried to optimize the probability of being absorbed at "Win."
+          For the transition probabilities, I used the concept of predator-prey models to determine which
+          pitching statistics should "help" or "harm" the probability of transitioning to that state.
+          For the second part of my final project, I proved the theorem that the k-step transition matrix of a Markov Chain
+          is the original transition matrix raised to the kth power.
         </div>
+      </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Yourname</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class = "picNText proj matlab">
+      <img src="projects/mandelbrotSet.png" alt="" align="middle" width="200" class = "picItem"/>
+      <div class="textItem">
+        <div class = "projTitle">Mandelbrot Set</div>
+        <div class = "projSub2">View &nbsp<a href="projects/mandelbrotSet.m"> .m file </a>&nbsp and &nbsp<a href="projects/mandelbrotSet.png"> image </a>&nbsp of Mandelbrot Set</div>
+        <div class = "projMainText">
+          This MATLAB .m file produces a Mandelbrot Set, which has the fractal property of self-similarity, with 100 iterations.
         </div>
+      </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Yourname</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class = "picNText proj html">
+      <img src="projects/webdev.png" alt="" align="middle" width="150" class = "picItem"/>
+      <div class="textItem">
+        <div class = "projTitle">Personal Website</div>
+        <div class = "projSub1">Languages: HTML, CSS, JavaScript</div>
+        <div class = "projMainText">
+          I created this website to develop my web development skills and display my accomplishments.
+          I plan to continue improving the website by creating a mobile version and making the code more dynamic with JavaScript.
         </div>
+      </div>
     </div>
 
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.js"></script>
+  </section>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/freelancer.js"></script>
-
+  <script src="js/myJavaScript.js"></script>
 </body>
 
 </html>

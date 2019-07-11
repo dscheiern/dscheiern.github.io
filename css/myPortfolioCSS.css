@@ -1,0 +1,332 @@
+body {
+  background-color: #dddddd;
+}
+
+#navbar {
+  display: flex;
+  background-color: #333;
+}
+
+#navbar a {
+  color: white;
+  padding: 14px 20px;
+  align-items: flex-end;
+  text-decoration: none;
+  text-align: center;
+}
+
+#navbar a:hover {
+  background-color: #a39c9c;
+  color: black;
+}
+
+#navName {
+  /*align-self: flex-start;*/
+  background-color: #333;
+  color: white;
+}
+
+.picNText {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.picItem {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textItem {
+  width: 55%;
+  padding-left: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.resTitle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.35em;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.resSub1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  padding-bottom: 5px;
+}
+
+.resSub2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.05em;
+  padding-bottom: 5px;
+}
+
+.resMainText {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+
+.projTitle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.35em;
+  font-weight: bold;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+
+.projSub1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  padding-bottom: 5px;
+}
+
+.projSub2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.05em;
+  padding-bottom: 5px;
+}
+
+.projMainText {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 16px;
+}
+
+.sectionTitle {
+  text-align: center;
+  color: #990000;
+  text-decoration: none;
+  /*text-shadow: 3px 2px red;*/
+  font-size: 2.5em;
+  font-weight: bold;
+  font-variant: small-caps;
+  margin-bottom: 10px;
+}
+
+.resSection {
+  text-align: center;
+  color: #d37878;
+  font-size: 2em;
+  font-weight: bold;
+  font-variant: small-caps;
+  margin-bottom: 5px;
+}
+
+.hl1 {
+  width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 4px;
+  background-color:#990000;
+}
+
+.vl {
+  border-left: 2px solid black;
+  height: 30px;
+}
+
+#aboutOptions {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-variant: small-caps;
+  font-size: 1.35em;
+  color: #d37878;
+  padding-top: 10px;
+  margin: 0px;
+}
+
+#past {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #d37878;
+  /*background-color: blue;*/
+}
+#present {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #990000;
+  font-weight: bold;
+}
+#future {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #d37878;
+}
+
+#resumeOptions {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-variant: small-caps;
+  font-size: 1.35em;
+  color: #d37878;
+  padding-top: 10px;
+  margin: 0px;
+}
+#educ {
+  width: 12%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #990000;
+  font-weight: bold;
+}
+#workExp {
+  width: 12%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #d37878;
+}
+#techSkills {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #d37878;
+}
+#activities {
+  width: 22%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #d37878;
+}
+
+#projOptions {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-variant: small-caps;
+  font-size: 1.35em;
+  color: #d37878;
+  padding-top: 10px;
+  margin: 0px;
+}
+#python {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #990000;
+  font-weight: bold;
+}
+#matlab {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #d37878;
+}
+#htmlcssjs {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #d37878;
+}
+#java {
+  width: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #d37878;
+}
+#appliedmath {
+  width: 13%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #d37878;
+}
+
+.proj {
+  display: none;
+}
+.python {
+  display: flex;
+}
+
+.resume {
+  display: none;
+}
+.educ {
+  display: flex;
+}
