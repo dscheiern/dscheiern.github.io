@@ -2,8 +2,9 @@
 <html lang="en">
 
 <head>
-  <link href="css/myPortfolioCSS.css" rel="stylesheet">
   <title>Delaney Scheiern's Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/myPortfolioCSS.css" rel="stylesheet">
 </head>
 
 <body>
@@ -17,15 +18,15 @@
   <section id = "about">
     <p class = "sectionTitle">About Me</p>
     <div class = "hl1"></div>
-    <div id="aboutOptions">
-      <a href="#" id="past" onclick = "pastFunc(); return false;">Past</a>
+    <div class="aboutOptions">
+      <a href="#" class = "abtOpt" id="past" onclick = "pastFunc(); return false;">Past</a>
       <div class="vl"></div>
-      <a href="#" id="present" onclick = "presentFunc(); return false;">Present</a>
+      <a href="#" class = "abtOpt" id="present" onclick = "presentFunc(); return false;">Present</a>
       <div class="vl"></div>
-      <a href="#" id="future" onclick = "futureFunc(); return false;">Future</a>
+      <a href="#" class = "abtOpt" id="future" onclick = "futureFunc(); return false;">Future</a>
     </div>
     <div class = "picNText">
-      <img src="img/profile2.png" width="200" height="320" align="center" class = "picItem"/>
+      <img src="img/profile2.png" width="200" align="center" class = "picItem"/>
       <p id = "aboutInfo" class = "textItem">I am currently interning at Sandia National Labs in the Electrical Science and Experiments Department. I am a Junior at Colgate University double majoring in Computer Science and Applied Math. For the Fall 2019 semester, I am enrolled in Operating Systems, Analysis of Algorithms, Numerical Analysis, and Real Analysis. I am a Fellow with Rewriting the Code (RTC), which is an organization that encourages women throughout their tech careers. At Colgate, I am captain of the cheerleading team, and I am a member of Colgate Coders, the aerial arts club, and Delta Delta Delta.</p>
     </div>
   </section>
@@ -33,7 +34,7 @@
   <section id = "resume">
     <p class = "sectionTitle">Resume</p>
     <div class = "hl1"></div>
-    <div id="resumeOptions">
+    <div class="resumeOptions">
       <a href="#" id="educ" class = "resOpt" onclick = "edFunc(); return false;">Education</a>
       <div class="vl"></div>
       <a href="#" id="workExp" class = "resOpt" onclick = "expFunc(); return false;">Experience</a>
@@ -49,7 +50,8 @@
       <div class = "textItem">
         <div class = "resTitle">Colgate University</div>
         <div class = "resSub1">Hamilton, NY</div>
-        <div class = "resSub2"><i>Bachelor of Arts in Computer Science and Applied Mathematics</i>, expected May 2021</div>
+        <div class = "resSub2"><i>Bachelor of Arts in Computer Science and Applied Mathematics</i></div>
+        <div class = "resSub2">expected May 2021</div>
         <div class = "resSub3">CS GPA: 3.91 &nbsp; &nbsp; &nbsp; Applied Math GPA: 3.41 &nbsp; &nbsp; &nbsp; Overall GPA: 3.47</div>
         <div class = "resMainText">
           I have completed courses continuing mathematical and computational knowledge in multivariable calculus, number theory,
@@ -239,7 +241,7 @@
   <section id = "projects">
     <p class = "sectionTitle">Projects</p>
     <div class = "hl1"></div>
-    <div id="projOptions">
+    <div class="projOptions">
       <a href="#" id="python" class = "projOpt" onclick = "pyFunc(); return false;">Python</a>
       <div class="vl"></div>
       <a href="#" id="matlab" class = "projOpt" onclick = "matlabFunc(); return false;">MATLAB</a>
@@ -250,6 +252,7 @@
       <div class="vl"></div>
       <a href="#" id="appliedmath" class = "projOpt" onclick = "mathFunc(); return false;">Applied Math</a>
     </div>
+    <hr>
 
     <div class = "picNText proj python java">
       <img src="img/portfolio/CourseRec.jpg" alt="" align="middle" width="200" class = "picItem"/>
@@ -266,6 +269,7 @@
         </div>
       </div>
     </div>
+    <hr class = "proj python java">
     <div class = "picNText proj java">
       <img src="img/portfolio/Movie-Madness.png" alt="" align="middle" width="200" class = "picItem"/>
       <div class="textItem">
@@ -282,6 +286,7 @@
         </div>
       </div>
     </div>
+    <hr class = "proj java">
     <div class = "picNText proj python">
       <img src="img/portfolio/CreditCardFraud.jpg" alt="" align="middle" width="200" class = "picItem"/>
       <div class="textItem">
@@ -295,6 +300,7 @@
         </div>
       </div>
     </div>
+    <hr class = "proj python">
     <div class = "picNText proj apmath">
       <img src="projects/angelsLogo.png" alt="" align="middle" width="150" class = "picItem"/>
       <div class="textItem">
@@ -312,6 +318,7 @@
         </div>
       </div>
     </div>
+    <hr class = "proj apmath">
     <div class = "picNText proj matlab">
       <img src="projects/mandelbrotSet.png" alt="" align="middle" width="200" class = "picItem"/>
       <div class="textItem">
@@ -322,6 +329,7 @@
         </div>
       </div>
     </div>
+    <hr class = "proj matlab">
     <div class = "picNText proj html">
       <img src="projects/webdev.png" alt="" align="middle" width="150" class = "picItem"/>
       <div class="textItem">
@@ -333,6 +341,7 @@
         </div>
       </div>
     </div>
+    <hr class = "proj html">
   </section>
 
   <script src="js/myJavaScript.js"></script>
