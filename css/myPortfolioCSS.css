@@ -117,6 +117,17 @@ body {
   align-items: center;
   padding-top: 10px;
 }
+.resProjLink a {
+  text-decoration: none;
+  color: #990000;
+  font-size: 1.1em;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+.resProjLink {
+  text-align: center;
+  padding-top: 10px;
+}
 
 .content {
   padding: 16px;
