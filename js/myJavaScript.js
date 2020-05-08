@@ -13,7 +13,7 @@ function makeSticky() {
 }
 
 function pastFunc(){
-  document.getElementById("aboutInfo").innerHTML = "In Summer 2018, I focused on expanding my computer science skills with online courses and small personal projects. At Colgate, I have taken courses in Data Structures, Computer Organization and Design, Discrete Mathematics, Multivariable Calculus, Linear Algebra, Number Theory, Computational Math, Math Modeling, and Differential Equations.";
+  document.getElementById("aboutInfo").innerHTML = "In Summer 2019, I was a technical intern at Sandia National Labs in the Electrical Science & Experiments group. In Summer 2018, I focused on expanding my computer science skills with online courses and small personal projects. At Colgate, I have taken courses in Data Structures, Computer Organization and Design, Discrete Mathematics, Multivariable Calculus, Linear Algebra, Number Theory, Computational Math, Math Modeling, and Differential Equations.";
   document.getElementById("past").style.color = "#990000";
   document.getElementById("past").style.fontWeight = "bold";
   document.getElementById("present").style.color = "#d37878";
@@ -43,9 +43,9 @@ function futureFunc(){
 function edFunc(){
   lst = document.getElementsByClassName("resOpt");
   for (i = 0; i < lst.length; i++){
-    lst[i].setAttribute("style", "color: #d37878; font-weight: normal;");
+    lst[i].setAttribute("style", "color: #8d85d4; font-weight: normal;");
   }
-  document.getElementById("educ").style.color = "#990000";
+  document.getElementById("educ").style.color = "#4d43ab";
   document.getElementById("educ").style.fontWeight = "bold";
   lst2 = document.getElementsByClassName("resume");
   for (i = 0; i < lst2.length; i++){
@@ -59,9 +59,9 @@ function edFunc(){
 function expFunc(){
   lst = document.getElementsByClassName("resOpt");
   for (i = 0; i < lst.length; i++){
-    lst[i].setAttribute("style", "color: #d37878; font-weight: normal;");
+    lst[i].setAttribute("style", "color: #8d85d4; font-weight: normal;");
   }
-  document.getElementById("workExp").style.color = "#990000";
+  document.getElementById("workExp").style.color = "#4d43ab";
   document.getElementById("workExp").style.fontWeight = "bold";
   lst2 = document.getElementsByClassName("resume");
   for (i = 0; i < lst2.length; i++){
@@ -75,9 +75,9 @@ function expFunc(){
 function techFunc(){
   lst = document.getElementsByClassName("resOpt");
   for (i = 0; i < lst.length; i++){
-    lst[i].setAttribute("style", "color: #d37878; font-weight: normal;");
+    lst[i].setAttribute("style", "color: #8d85d4; font-weight: normal;");
   }
-  document.getElementById("techSkills").style.color = "#990000";
+  document.getElementById("techSkills").style.color = "#4d43ab";
   document.getElementById("techSkills").style.fontWeight = "bold";
   lst2 = document.getElementsByClassName("resume");
   for (i = 0; i < lst2.length; i++){
@@ -91,9 +91,9 @@ function techFunc(){
 function actFunc(){
   lst = document.getElementsByClassName("resOpt");
   for (i = 0; i < lst.length; i++){
-    lst[i].setAttribute("style", "color: #d37878; font-weight: normal;");
+    lst[i].setAttribute("style", "color: #8d85d4; font-weight: normal;");
   }
-  document.getElementById("activities").style.color = "#990000";
+  document.getElementById("activities").style.color = "#4d43ab";
   document.getElementById("activities").style.fontWeight = "bold";
   lst2 = document.getElementsByClassName("resume");
   for (i = 0; i < lst2.length; i++){
@@ -108,9 +108,9 @@ function actFunc(){
 function pyFunc(){
   lst = document.getElementsByClassName("projOpt");
   for (i = 0; i < lst.length; i++){
-    lst[i].setAttribute("style", "color: #d37878; font-weight: normal;");
+    lst[i].setAttribute("style", "color: #65a686; font-weight: normal;");
   }
-  document.getElementById("python").style.color = "#990000";
+  document.getElementById("python").style.color = "#286145";
   document.getElementById("python").style.fontWeight = "bold";
   lst2 = document.getElementsByClassName("proj");
   for (i = 0; i < lst2.length; i++){
@@ -124,9 +124,9 @@ function pyFunc(){
 function matlabFunc(){
   lst = document.getElementsByClassName("projOpt");
   for (i = 0; i < lst.length; i++){
-    lst[i].setAttribute("style", "color: #d37878; font-weight: normal;");
+    lst[i].setAttribute("style", "color: #65a686; font-weight: normal;");
   }
-  document.getElementById("matlab").style.color = "#990000";
+  document.getElementById("matlab").style.color = "#286145";
   document.getElementById("matlab").style.fontWeight = "bold";
   lst2 = document.getElementsByClassName("proj");
   for (i = 0; i < lst2.length; i++){
@@ -140,9 +140,9 @@ function matlabFunc(){
 function htmlFunc(){
   lst = document.getElementsByClassName("projOpt");
   for (i = 0; i < lst.length; i++){
-    lst[i].setAttribute("style", "color: #d37878; font-weight: normal;");
+    lst[i].setAttribute("style", "color: #65a686; font-weight: normal;");
   }
-  document.getElementById("htmlcssjs").style.color = "#990000";
+  document.getElementById("htmlcssjs").style.color = "#286145";
   document.getElementById("htmlcssjs").style.fontWeight = "bold";
   lst2 = document.getElementsByClassName("proj");
   for (i = 0; i < lst2.length; i++){
@@ -156,9 +156,9 @@ function htmlFunc(){
 function javaFunc(){
   lst = document.getElementsByClassName("projOpt");
   for (i = 0; i < lst.length; i++){
-    lst[i].setAttribute("style", "color: #d37878; font-weight: normal;");
+    lst[i].setAttribute("style", "color: #65a686; font-weight: normal;");
   }
-  document.getElementById("java").style.color = "#990000";
+  document.getElementById("java").style.color = "#286145";
   document.getElementById("java").style.fontWeight = "bold";
   lst2 = document.getElementsByClassName("proj");
   for (i = 0; i < lst2.length; i++){
@@ -172,9 +172,9 @@ function javaFunc(){
 function mathFunc(){
   lst = document.getElementsByClassName("projOpt");
   for (i = 0; i < lst.length; i++){
-    lst[i].setAttribute("style", "color: #d37878; font-weight: normal;");
+    lst[i].setAttribute("style", "color: #65a686; font-weight: normal;");
   }
-  document.getElementById("appliedmath").style.color = "#990000";
+  document.getElementById("appliedmath").style.color = "#286145";
   document.getElementById("appliedmath").style.fontWeight = "bold";
   lst2 = document.getElementsByClassName("proj");
   for (i = 0; i < lst2.length; i++){

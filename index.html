@@ -16,9 +16,18 @@
     <a href="#projects">Projects</a>
   </div>
 
+  <div id="headerpic">
+    <div class="headertext" style="order: 1">
+      <h1>Delaney Scheiern</h1>
+    </div>
+    <div class="headersubtext" style="order: 2">
+      <h1>Computer Science & Applied Math Major | Future Machine Learning Engineer</h1>
+    </div>
+  </div>
+
   <section id = "about">
-    <p class = "sectionTitle">About Me</p>
-    <div class = "hl1"></div>
+    <p class = "aboutTitle">About Me</p>
+    <!--<div class = "hl1"></div>-->
     <div class="aboutOptions">
       <a href="#" class = "abtOpt" id="past" onclick = "pastFunc(); return false;">Past</a>
       <div class="vl"></div>
@@ -27,15 +36,19 @@
       <a href="#" class = "abtOpt" id="future" onclick = "futureFunc(); return false;">Future</a>
     </div>
     <div class = "picNText">
-      <img src="img/profile2.png" width="200" align="center" class = "picItem"/>
+      <img src="img/profile.jpg" width="200" align="center" class = "picItem"/>
       <p id = "aboutInfo" class = "textItem">I am currently interning at Sandia National Labs in the Electrical Science and Experiments Department. I am a Junior at Colgate University double majoring in Computer Science and Applied Math. For the Fall 2019 semester, I am enrolled in Operating Systems, Analysis of Algorithms, Numerical Analysis, and Real Analysis. I am a Fellow with Rewriting the Code (RTC), which is an organization that encourages women throughout their tech careers. At Colgate, I am captain of the cheerleading team, and I am a member of Colgate Coders, the aerial arts club, and Delta Delta Delta.</p>
     </div>
   </section>
 
   <section id = "resume">
-    <p class = "sectionTitle">Resume</p>
-    <div class = "hl1"></div>
-    <div class = "resProjLink"><a href = "Delaney_Scheiern_resume.pdf" target="_blank">View my current Resume</a></div>
+    <div id="resheaderpic" class="resHeadTitle">
+      <div class="subheadertext">
+        <h1>Resume</h1>
+      </div>
+      <!--<div class = "hl1"></div>-->
+      <div class = "resProjLink" class = "subsubheadertext"><a href = "Delaney_Scheiern_resume.pdf" target="_blank">View my current Resume</a></div>
+    </div>
     <div class="resumeOptions">
       <a href="#" id="educ" class = "resOpt" onclick = "edFunc(); return false;">Education</a>
       <div class="vl"></div>
@@ -45,6 +58,7 @@
       <div class="vl"></div>
       <a href="#" id="activities" class = "resOpt" onclick = "actFunc(); return false;">Leadership and Activities</a>
     </div>
+
     <hr>
 <!-- Education section -->
     <div class = "picNText resume educ">
@@ -241,9 +255,13 @@
   </section>
 
   <section id = "projects">
-    <p class = "sectionTitle">Projects</p>
-    <div class = "hl1"></div>
-    <div class = "resProjLink"><a href = "https://github.com/dscheiern" target="_blank">Visit my GitHub for some complete projects</a></div>
+    <div id="projheaderpic" class="projHeadTitle">
+      <div class="subheadertext">
+        <h1>Projects</h1>
+      </div>
+      <!--<div class = "hl1"></div>-->
+      <div class = "resProjLink" class="subsubheadertext"><a href = "https://github.com/dscheiern" target="_blank">Visit my GitHub</a></div>
+    </div>
     <div class="projOptions">
       <a href="#" id="python" class = "projOpt" onclick = "pyFunc(); return false;">Python</a>
       <div class="vl"></div>
@@ -255,6 +273,7 @@
       <div class="vl"></div>
       <a href="#" id="appliedmath" class = "projOpt" onclick = "mathFunc(); return false;">Applied Math</a>
     </div>
+
     <hr>
 
     <div class = "picNText proj python">
