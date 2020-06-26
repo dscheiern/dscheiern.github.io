@@ -13,7 +13,7 @@ function makeSticky() {
 }
 
 function pastFunc(){
-  document.getElementById("aboutInfo").innerHTML = "In Summer 2019, I was a technical intern at Sandia National Labs in the Electrical Science & Experiments group. In Summer 2018, I focused on expanding my computer science skills with online courses and small personal projects. At Colgate, I have taken courses in Data Structures, Computer Organization and Design, Discrete Mathematics, Multivariable Calculus, Linear Algebra, Number Theory, Computational Math, Math Modeling, and Differential Equations.";
+  document.getElementById("aboutInfo").innerHTML = "In the Spring 2020 semester, I was lucky enough to study abroad in Wollongong, NSW, Australia. I was enrolled in Machine Learning, Statistical Learning, and Cryptography. Unfortunately, I was sent home after 5 weeks due to the COVID-19 pandemic. However, I had an amazing experience while I was there, and I plan to return someday soon. In Summer 2019, I was a technical intern at Sandia National Labs in the Electrical Science & Experiments group. In Summer 2018, I focused on expanding my computer science skills with online courses and small personal projects. At Colgate, I have taken courses in Data Structures, Computer Organization and Design, Discrete Mathematics, Multivariable Calculus, Linear Algebra, Number Theory, Computational Math, Math Modeling, and Differential Equations.";
   document.getElementById("past").style.color = "#990000";
   document.getElementById("past").style.fontWeight = "bold";
   document.getElementById("present").style.color = "#d37878";
@@ -22,7 +22,7 @@ function pastFunc(){
   document.getElementById("future").style.fontWeight = "normal";
 }
 function presentFunc(){
-  document.getElementById("aboutInfo").innerHTML = "I am a Junior at Colgate University double majoring in Computer Science and Applied Math. For the Fall 2019 semester, I am enrolled in Operating Systems, Analysis of Algorithms, Numerical Analysis, and Real Analysis. I am a Fellow with Rewriting the Code (RTC), which is an organization that encourages women throughout their tech careers. At Colgate, I am captain of the cheerleading team, and I am a member of Colgate Coders, the aerial arts club, and Delta Delta Delta.";
+  document.getElementById("aboutInfo").innerHTML = "I'm a senior at Colgate University graduating in May 2021, double majoring in Computer Science and Applied Math. For the Fall 2020 semester, I am enrolled in Data Analysis, Environmental Data Science, Applied Math Seminar, and Dance Studies. I'm volunteering as a campaign data analyst with Bluebonnet Data, and plan to continue doing so for years to come. I'm a Fellow for my second year with Rewriting the Code (RTC), which is an organization that encourages women throughout their tech careers. At Colgate, I am captain of the cheerleading team, and I am a member of Colgate Coders, the Colgate Data Society, and Delta Delta Delta.";
   document.getElementById("present").style.color = "#990000";
   document.getElementById("present").style.fontWeight = "bold";
   document.getElementById("past").style.color = "#d37878";
@@ -31,7 +31,7 @@ function presentFunc(){
   document.getElementById("future").style.fontWeight = "normal";
 }
 function futureFunc(){
-  document.getElementById("aboutInfo").innerHTML = "I will be studying abroad in Wollongong, Australia for the Spring 2020 semester with a Colgate study group focused on Computer Science. In the near future I plan to: develop my JavaScript skills with a mobile version of this website, explore Python machine learning libraries, compete in Kaggle competitions, and upload more projects to my GitHub. I hope to either continue with Sandia National Labs or join a startup with a focus on Data Science and Machine Learning";
+  document.getElementById("aboutInfo").innerHTML = "I will be intensely searching for a full time opportunity in Data Science and Machine Learning for after my graduation. I plan to pursue an online Master's Degree in Machine Learning while starting my full time job.";
   document.getElementById("future").style.color = "#990000";
   document.getElementById("future").style.fontWeight = "bold";
   document.getElementById("past").style.color = "#d37878";
@@ -133,6 +133,22 @@ function matlabFunc(){
     lst2[i].style.display = "none";
   }
   lst3 = document.getElementsByClassName("matlab");
+  for (i = 0; i < lst3.length; i++){
+    lst3[i].style.display = "flex";
+  }
+}
+function rFunc(){
+  lst = document.getElementsByClassName("projOpt");
+  for (i = 0; i < lst.length; i++){
+    lst[i].setAttribute("style", "color: #65a686; font-weight: normal;");
+  }
+  document.getElementById("r").style.color = "#286145";
+  document.getElementById("r").style.fontWeight = "bold";
+  lst2 = document.getElementsByClassName("proj");
+  for (i = 0; i < lst2.length; i++){
+    lst2[i].style.display = "none";
+  }
+  lst3 = document.getElementsByClassName("r");
   for (i = 0; i < lst3.length; i++){
     lst3[i].style.display = "flex";
   }

@@ -375,6 +375,13 @@ body {
   text-decoration: none;
   color: #65a686;
 }
+#r {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #65a686;
+}
 #htmlcssjs {
   display: flex;
   justify-content: center;
@@ -437,10 +444,11 @@ body {
   #workExp {width: 17%;}
   #techSkills {width: 23%;}
   #activities {width: 34%;}
-  #python {width: 13%;}
+  #python {width: 12%;}
+  #r {width: 3%;}
   #matlab {width: 14%;}
   #htmlcssjs {width: 30%;}
-  #java {width: 7%;}
+  #java {width: 5%;}
   #appliedmath {width: 22%;}
 }
 
@@ -471,9 +479,10 @@ body {
   #workExp {width: 12%;}
   #techSkills {width: 15%;}
   #activities {width: 22%;}
-  #python {width: 10%;}
+  #python {width: 9%;}
+  #r {width: 3%;}
   #matlab {width: 10%;}
   #htmlcssjs {width: 20%;}
-  #java {width: 7%;}
+  #java {width: 5%;}
   #appliedmath {width: 13%;}
 }
